@@ -17,7 +17,29 @@
         <ImageView
             android:id="@+id/iv_pelicula_imagen"
             android:layout_width="match_parent"
-            android:layout_height="250dp"/>
+            android:layout_height="250dp"
+            android:src="@drawable/halo"/>
+
+        <TextView
+            android:id="@+id/tv_nombre_pelicula"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:paddingLeft="25dp"
+            android:text="HALO"
+            android:textSize="20sp"
+            android:textColor="@color/yellow"
+            android:layout_gravity="center"/>
+
+        <TextView
+            android:id="@+id/tv_pelicula_desc"
+            android:layout_marginTop="18dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="14dp"
+            android:paddingHorizontal="25dp"
+            android:text="Aqui la descripcion de la pelicula"
+            android:textColor="@color/yellow"
+            android:layout_gravity="center"/>
     </LinearLayout>
 
 </LinearLayout>
