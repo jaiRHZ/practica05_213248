@@ -1,7 +1,8 @@
 package mx.edu.itson.practica5
 
-data class Pelicula(
+data class Pelicula (
     var titulo: String,
     var image: Int,
     var header: Int,
-    var sinopsis: String)
+    var sinopsis: String,
+    var seats: ArrayList<Cliente>)

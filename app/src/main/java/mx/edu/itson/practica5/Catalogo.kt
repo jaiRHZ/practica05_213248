@@ -39,11 +39,11 @@ class Catalogo : AppCompatActivity() {
     }
 
     fun cargarPeliculas(){
-        peliculas.add(Pelicula("Dune", R.drawable.dune,R.drawable.dunedos, "Aventura en el desierto"))
+        peliculas.add(Pelicula("Dune", R.drawable.dune,R.drawable.dunedos, "Aventura en el desierto", arrayListOf<Cliente>()))
     }
 
     fun cargarSeries(){
-        series.add(Pelicula("Halo", R.drawable.halo, R.drawable.halos, "Acompaña al Halo Verdecito en Reach"))
+        series.add(Pelicula("Halo", R.drawable.halo, R.drawable.halos, "Acompaña al Halo Verdecito en Reach",arrayListOf<Cliente>()))
     }
 
     class PeliculaAdapter: BaseAdapter {
@@ -83,6 +83,7 @@ class Catalogo : AppCompatActivity() {
                 intento.putExtra("sinopsis", pelicula.sinopsis)
                 intento.putExtra("header", pelicula.header)
                 intento.putExtra("image", pelicula.image)
+                intento.putExtra("numberSeats",(20-pelicula.seats.size))
 
                 contexto!!.startActivity(intento)
             }
